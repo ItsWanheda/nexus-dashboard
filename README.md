@@ -2,7 +2,7 @@
 
 A futuristic cyberpunk-style system monitoring dashboard build with pure HTML, CSS, JavaScript.
 
-![Preview](Preview.png)
+![Preview](src/img/Preview.png)
 
 ## Features
 
