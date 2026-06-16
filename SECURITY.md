@@ -1,41 +1,47 @@
 # Security Policy
 
-## Supported Versions
+> **Security is not a feature, it's a foundation.** 🛡️
 
-The following versions of NEXUS Dashboard are currently supported with security updates.
+---
 
-| Version | Supported          |
-| ------- | ------------------ |
-| 1.1.0   | :white_check_mark: |
-| < 1.0   | :x:                |
+## 🔒 Supported Versions
 
-## Reporting a Vulnerability
+We maintain strict version control to ensure security patches are delivered effectively.
 
-We take the security of NEXUS Dashboard seriously. If you discover a security vulnerability, please report it responsibly.
+| Version | Supported | Status |
+| :--- | :---: | :--- |
+| **1.1.0** | ✅ | Active |
+| **1.0.0** | ❌ |
+---
 
-### How to Report
-1. **Do not** open a public GitHub Issue for security vulnerabilities.
-2. Email your findings to: **wanheda.work@gmail.com**
-3. Include a detailed description of the vulnerability and steps to reproduce it.
+## 🚨 Reporting a Vulnerability
 
-### Response Time
-We aim to acknowledge and respond to security reports within **48 hours**.
+We prioritize the security of our infrastructure and users above all else. If you believe you have discovered a vulnerability, we request that you **disclose it responsibly** by following our private disclosure process.
 
-### What to Expect
-- We will confirm receipt of your report.
-- We will investigate the issue and determine the impact.
-- We will release a patch if the vulnerability is valid.
-- We will credit you in the changelog (unless you prefer anonymity).
+### ⚠️ Guidelines
+- **DO NOT** open a public issue, pull request, or discussion regarding a potential vulnerability.
+- **DO NOT** exploit the vulnerability on live systems.
+- **DO NOT** share details of the exploit with third parties until a patch is released.
 
-## Known Security Considerations
+### 📧 Disclosure Process
+Please report all findings directly via email:
 
-### Terminal Access
-The `Terminal` feature allows execution of system commands via the Python backend.
-- **Risk**: Improper input sanitization could lead to Command Injection.
-- **Mitigation**: The backend uses `subprocess.run` with `shell=True`. Users should only run this dashboard on trusted local machines.
-- **Recommendation**: In production environments, implement a whitelist of allowed commands or disable the terminal endpoint entirely.
+**[wanheda.work@gmail.com](mailto:wanheda.work@gmail.com)**
 
-### CORS Policy
-The backend enables CORS (`allow_origins=["*"]`) for development convenience.
-- **Risk**: This allows any website to make requests to your local API.
-- **Mitigation**: For production, restrict `allow_origins` to your specific domain or IP.
+*To ensure we handle your report efficiently, please include:*
+* **Proof of Concept (PoC)** or detailed reproduction steps
+* **Impact Analysis**
+* **Suggested Remediation** (optional)
+
+---
+
+## ⏱️ Response SLA
+
+We treat security reports as high-priority incidents. You can expect the following response timeline:
+
+1.  **Acknowledgment**: Within **48 hours** of initial receipt.
+2.  **Analysis & Feedback**: Within **72 hours**, we will provide an initial assessment and our plan for remediation.
+
+---
+*Thank you for helping keep this project secure for everyone.*
+---
