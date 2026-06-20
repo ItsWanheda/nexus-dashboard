@@ -60,6 +60,8 @@ python server.py
 ### 4. Open the Frontend
 *Open index.html in your web browser.*
 
+---
+
 ## 📂 Project Structure
 ```text
 nexus-dashboard/
@@ -77,19 +79,27 @@ nexus-dashboard/
 ├── CONTRIBUTING.md
 └── CHANGELOG.md
 ```
+
+---
+
 ## ⚠️ Security Warning
 **🔴 CRITICAL: Local Use Only**
 ***This dashboard includes a Terminal feature that allows executing system commands.***
 1. **Local Use Only:** This project is designed for local development and personal monitoring.
 2. **Do Not Expose:** Do not host this dashboard on a public server without implementing strict authentication and command whitelisting.**
 
+---
+
 ## 🤝 Contributing
 * We welcome contributions! Please read our Contributing Guidelines for details on our code of conduct and the process for submitting pull requests.
 
+---
+
 ## 📄 License
 * This project is licensed under the MIT License - see the LICENSE file for details.
-```
+
+---
+
 <p align="center">
 Made with ❤️ for Cyberpunk Aesthetics
 </p>
-```
